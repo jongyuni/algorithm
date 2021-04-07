@@ -34,7 +34,7 @@ def quicksort(my_list, start, end):
     if end - start < 1:
         return
 
-    p, s = partition(my_list, start, end) # p and s are the starting index number and end index number of pivots
+    p, s = partition(my_list, start, end) # p and s are the end index number and the starting index number of pivot
     quicksort(my_list, start, s - 1) # quick sort for smaller elements
     quicksort(my_list, p + 1, end) # quick sort for bigger elements
 
